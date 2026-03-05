@@ -21,6 +21,106 @@
 
 body {
   background: var(--background);
+  background-image: url('/Frame.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center top;
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ── KALLISTO ───────────────────────────────────────── */
+@font-face {
+  font-family: 'Kallisto';
+  src: url('/fonts/Kallisto_Thin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Kallisto';
+  src: url('/fonts/Kallisto_Thin_Italic.otf') format('opentype');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Kallisto';
+  src: url('/fonts/Kallisto_Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Kallisto';
+  src: url('/fonts/Kallisto_Light_Italic.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Kallisto';
+  src: url('/fonts/Kallisto_Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Kallisto';
+  src: url('/fonts/Kallisto_Medium_Italic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Kallisto';
+  src: url('/fonts/Kallisto_Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Kallisto';
+  src: url('/fonts/Kallisto_Bold_Italic.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Kallisto';
+  src: url('/fonts/Kallisto_Heavy.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Kallisto';
+  src: url('/fonts/Kallisto_Heavy_Italic.otf') format('opentype');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* ── SERAVEK ────────────────────────────────────────── */
+@font-face {
+  font-family: 'Seravek';
+  src: url('/fonts/Seravek.ttc') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-kallisto: 'Kallisto', sans-serif;
+  --font-seravek:  'Seravek', sans-serif;
 }
