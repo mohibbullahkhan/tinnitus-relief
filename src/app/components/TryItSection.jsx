@@ -6,39 +6,56 @@ import React from "react";
 
 const TryItSection = () => {
   return (
-    <section className="w-full">
-      <div className="grid grid-cols-4 w-full">
-        {/* ── FIRST 3 COLUMNS ── */}
-        <div className="col-span-3 flex items-start gap-8 pl-20 pr-0 pt-6 pb-8">
-          {/* ══════════════════════════════════
-              LEFT — "TRY IT" heading + Device mockups
-          ══════════════════════════════════ */}
-          <div className="flex flex-col items-start min-w-0 flex-1">
-            {/* ── "TRY IT FOR 7 days:: FREE" + arrow ── */}
-            <div className="flex items-center gap-4 mb-6">
-              <p
-                className="text-[24px] leading-none m-0 tracking-[0.06em] uppercase"
-                style={{ fontFamily: "var(--font-kallisto)", fontWeight: 900 }}
-              >
-                <span className="text-[#d8d80a]">TRY IT FOR 7 days:: </span>
-                <span className="text-[#d8d80a]">FREE</span>
-              </p>
+    <section className="w-full pt-6 pb-8">
+      <div
+        className="hero-row"
+        style={{
+          display: "grid",
+          gridTemplateColumns: "1fr 1fr",
+          alignItems: "flex-start",
+          gap: "20px",
+          width: "100%",
+        }}
+      >
+        {/* ════════════════════════════════════════════════
+            LEFT COLUMN — "TRY IT" heading + Device mockups
+        ════════════════════════════════════════════════ */}
+        <div
+          style={{
+            flex: "1 1 0",
+            minWidth: 0,
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "flex-start",
+            marginLeft: "80px",
+            marginTop: "0px",
+          }}
+        >
+          {/* ── "TRY IT FOR 7 days:: FREE" + arrow ── */}
+          <div className="flex items-center gap-4 mb-6">
+            <p
+              className="text-[24px] leading-none m-0 tracking-[0.06em] uppercase"
+              style={{ fontFamily: "var(--font-kallisto)", fontWeight: 900 }}
+            >
+              <span className="text-[#d8d80a]">TRY IT FOR 7 days:: </span>
+              <span className="text-[#d8d80a]">FREE</span>
+            </p>
 
-              {/* Arrow */}
-              <div className="relative flex items-center w-[120px] h-[2px] bg-[yellowgreen]">
-                <div className="absolute left-0 top-0 h-full w-full bg-[#d8d80a]" />
-                <div className="absolute right-[-2px] top-1/2 -translate-y-1/2">
-                  <svg width="12" height="12" viewBox="0 0 10 10" fill="none">
-                    <polygon points="0,0 10,5 0,10" fill="#6abf4b" />
-                  </svg>
-                </div>
+            {/* Arrow */}
+            <div className="relative flex items-center w-[120px] h-[2px] bg-[yellowgreen]">
+              <div className="absolute left-0 top-0 h-full w-full bg-[#d8d80a]" />
+              <div className="absolute right-[-2px] top-1/2 -translate-y-1/2">
+                <svg width="12" height="12" viewBox="0 0 10 10" fill="none">
+                  <polygon points="0,0 10,5 0,10" fill="#6abf4b" />
+                </svg>
               </div>
             </div>
+          </div>
 
-            {/* ── Device Mockups row ── */}
-            <div className="flex items-end gap-5">
-              {/* Tablet — larger, left */}
-              {/* <div
+          {/* ── Device Mockups row ── */}
+          <div className="flex items-end gap-5">
+            {/* Tablet — larger, left */}
+            {/* <div
                 className="relative bg-[#0a0a0a] rounded-[6px] border border-[rgba(255,255,255,0.12)] overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.7)]"
                 style={{ width: "150px", height: "210px" }}
               >
@@ -95,14 +112,14 @@ const TryItSection = () => {
                 </div>
                 <div className="absolute bottom-[4px] left-1/2 -translate-x-1/2 w-[34px] h-[2px] bg-[rgba(255,255,255,0.2)] rounded-full" />
               </div> */}
-              <div>
-                <Image src="/ipad.svg" alt="Tablet Mockup" width={180} height={240} />
-              </div>
+            <div>
+              <Image src="/ipad.svg" alt="Tablet Mockup" width={180} height={240} />
+            </div>
 
-                <div>
-                <Image src="/iPhone.svg" alt="Tablet Mockup" width={150} height={210} />
-              </div>
-              {/* <div
+            <div>
+              <Image src="/iPhone.svg" alt="Tablet Mockup" width={150} height={210} />
+            </div>
+            {/* <div
                 className="relative bg-[#0a0a0a] rounded-[6px] border border-[rgba(255,255,255,0.12)] overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.7)]"
                 style={{ width: "100px", height: "168px" }}
               >
@@ -159,17 +176,28 @@ const TryItSection = () => {
                 </div>
                 <div className="absolute bottom-[3px] left-1/2 -translate-x-1/2 w-[26px] h-[2px] bg-[rgba(255,255,255,0.2)] rounded-full" />
               </div> */}
-            </div>
-            {/* ── END Device Mockups ── */}
           </div>
-          {/* ── END LEFT ── */}
+          {/* ── END Device Mockups ── */}
+        </div>
+        {/* ── END LEFT COLUMN ── */}
 
-          {/* ══════════════════════════════════
-              RIGHT — App Store Buttons
-          ══════════════════════════════════ */}
-          <div className="flex flex-col gap-3 flex-1 min-w-0 pt-0">
-            {/* Google Play */}
-            {/* <div className="flex items-center gap-2.5 bg-black border border-[rgba(255,255,255,0.15)] rounded px-3 py-2.5 w-[160px] cursor-pointer hover:border-[rgba(255,255,255,0.3)] transition-colors">
+        {/* ════════════════════════════════════════════════
+              RIGHT COLUMN — App Store Buttons
+          ════════════════════════════════════════════════ */}
+        <div
+          className="hero-video-col"
+          style={{
+            flex: "0 0 340px",
+            width: "340px",
+            flexShrink: 0,
+            display: "flex",
+            flexDirection: "column",
+            gap: "12px",
+            marginTop: "2px",
+          }}
+        >
+          {/* Google Play */}
+          {/* <div className="flex items-center gap-2.5 bg-black border border-[rgba(255,255,255,0.15)] rounded px-3 py-2.5 w-[160px] cursor-pointer hover:border-[rgba(255,255,255,0.3)] transition-colors">
               <svg viewBox="0 0 24 24" className="w-6 h-6 shrink-0" fill="none">
                 <path
                   d="M3.18 1L13.88 12 3.18 23c-.34-.17-.57-.52-.57-.92V1.92C2.61 1.52 2.84 1.17 3.18 1z"
@@ -203,7 +231,7 @@ const TryItSection = () => {
                 </span>
               </div>
             </div> */}
-            {/* <div
+          {/* <div
   className="inline-block rounded-xl bg-black p-2"
   style={{
    
@@ -224,40 +252,40 @@ const TryItSection = () => {
 
   />
 </div> */}
-<div
-      className="inline-block w-[180px]  overflow-visible"
-      style={{
-        border: "1.5px solid #c7c84a",
-        padding: "12px", // Space for the glow to breathe
-      }}
-    >
-      {/* INNER DIV: The black button with the white "Halo" shadow */}
-      <div
-        className="flex items-center justify-center bg-black"
-        style={{
-          padding: "8px 10px",
-          borderRadius: "8px",
-          /* Multi-layered white shadow for the "foggy" glow effect */
-          boxShadow: `
+          <div
+            className="inline-block w-[180px]  overflow-visible"
+            style={{
+              border: "1.5px solid #c7c84a",
+              padding: "12px", // Space for the glow to breathe
+            }}
+          >
+            {/* INNER DIV: The black button with the white "Halo" shadow */}
+            <div
+              className="flex items-center justify-center bg-black"
+              style={{
+                padding: "8px 10px",
+                borderRadius: "8px",
+                /* Multi-layered white shadow for the "foggy" glow effect */
+                boxShadow: `
             0 0 15px 5px rgba(255, 255, 255, 0.35), 
             0 0 30px 10px rgba(255, 255, 255, 0.15)
           `,
-        }}
-      >
-        <Image
-          src="/google-play.png"
-          alt="Get it on Google Play"
-          /* Image scales automatically inside the 180px parent */
-          width={180}
-          height={55}
-          className="rounded-md block h-auto w-full"
-          priority
-        />
-      </div>
-    </div>
+              }}
+            >
+              <Image
+                src="/google-play.png"
+                alt="Get it on Google Play"
+                /* Image scales automatically inside the 180px parent */
+                width={180}
+                height={55}
+                className="rounded-md block h-auto w-full"
+                priority
+              />
+            </div>
+          </div>
 
-            {/* App Store */}
-            {/* <div className="flex items-center gap-2.5 bg-black border border-[rgba(255,255,255,0.15)] rounded px-3 py-2.5 w-[160px] cursor-pointer hover:border-[rgba(255,255,255,0.3)] transition-colors">
+          {/* App Store */}
+          {/* <div className="flex items-center gap-2.5 bg-black border border-[rgba(255,255,255,0.15)] rounded px-3 py-2.5 w-[160px] cursor-pointer hover:border-[rgba(255,255,255,0.3)] transition-colors">
               <svg
                 viewBox="0 0 24 24"
                 className="w-6 h-6 shrink-0"
@@ -280,60 +308,59 @@ const TryItSection = () => {
                 </span>
               </div>
             </div> */}
-            
-           <div
-      className="inline-block w-[180px]  overflow-visible"
-      style={{
-        border: "1.5px solid #c7c84a",
-        padding: "12px", // Space for the glow to breathe
-      }}
-    >
-      {/* INNER DIV: The black button with the white "Halo" shadow */}
-      <div
-        className="flex items-center justify-center bg-black"
-        style={{
-          padding: "8px 10px",
-          borderRadius: "8px",
-          /* Multi-layered white shadow for the "foggy" glow effect */
-          boxShadow: `
+
+          <div
+            className="inline-block w-[180px]  overflow-visible"
+            style={{
+              border: "1.5px solid #c7c84a",
+              padding: "12px", // Space for the glow to breathe
+            }}
+          >
+            {/* INNER DIV: The black button with the white "Halo" shadow */}
+            <div
+              className="flex items-center justify-center bg-black"
+              style={{
+                padding: "8px 10px",
+                borderRadius: "8px",
+                /* Multi-layered white shadow for the "foggy" glow effect */
+                boxShadow: `
             0 0 15px 5px rgba(255, 255, 255, 0.35), 
             0 0 30px 10px rgba(255, 255, 255, 0.15)
           `,
-        }}
-      >
-        <Image
-          src="/app-store.png"
-          alt="Get it on App Store"
-          /* Image scales automatically inside the 180px parent */
-          width={180}
-          height={55}
-          className="rounded-md block h-auto w-full"
-          priority
-        />
-      </div>
-    </div>
-
-
+              }}
+            >
+              <Image
+                src="/app-store.png"
+                alt="Get it on App Store"
+                /* Image scales automatically inside the 180px parent */
+                width={180}
+                height={55}
+                className="rounded-md block h-auto w-full"
+                priority
+              />
+            </div>
           </div>
-          {/* ── END RIGHT ── */}
-        </div>
-        {/* ── END col-span-3 ── */}
 
-        {/* ── 4th COLUMN — empty ── */}
-        <div className="col-span-1 p-0 m-0" />
+
+        </div>
+        {/* ── END RIGHT COLUMN ── */}
       </div>
 
       <style>{`
-        @media (max-width: 767px) {
-          section .grid {
-            grid-template-columns: 1fr !important;
+          @media (max-width: 767px) {
+            .hero-row {
+              display: flex !important;
+              flex-direction: column !important;
+            }
+            .hero-video-col {
+              flex: unset !important;
+              width: 100% !important;
+              margin-top: 20px !important;
+              padding-left: 20px !important;
+              padding-right: 20px !important;
+            }
           }
-          section .col-span-3 {
-            flex-direction: column !important;
-            padding-left: 1rem !important;
-          }
-        }
-      `}</style>
+        `}</style>
     </section>
   );
 };
