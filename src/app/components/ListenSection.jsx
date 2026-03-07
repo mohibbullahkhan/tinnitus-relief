@@ -48,12 +48,12 @@ const ListenSection = () => {
             </p>
 
             {/* Arrow slider track */}
-            <div className="relative flex items-center w-[200px] h-[2px] bg-[#4a6a3a]">
+            <div className="relative flex items-center w-[200px] h-[3px] bg-[#4a6a3a]">
               {/* filled green portion */}
               <div className="absolute left-0 top-0 h-full w-[70%] bg-[#6abf4b]" />
               {/* arrow head at end */}
               <div className="absolute right-0 top-1/2 -translate-y-1/2">
-                <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                <svg width="14" height="14" viewBox="0 0 10 10" fill="none">
                   <polygon points="0,0 10,5 0,10" fill="#6abf4b" />
                 </svg>
               </div>
@@ -133,23 +133,9 @@ const ListenSection = () => {
           />
 
           {/* Forest Rain */}
-          {/* <div className="flex items-center gap-3 bg-[rgba(0,0,0,0.45)] border border-[rgba(100,160,80,0.25)] rounded-sm px-3 py-2.5 cursor-pointer hover:border-[rgba(100,160,80,0.5)] transition-colors group">
-              
-              <div className="w-0 h-0 border-y-[7px] border-l-[13px] border-y-transparent border-l-[#6abf4b] shrink-0 group-hover:border-l-[#8adf6b] transition-colors" />
-              <p
-                className="text-[12px] leading-none text-[#c8d0b8] m-0 tracking-[0.01em]"
-                style={{ fontFamily: "var(--font-kallisto)", fontWeight: 500 }}
-              >
-                Forest Rain :{" "}
-                <span className="text-[#a0b090]" style={{ fontWeight: 400 }}>
-                  lite
-                </span>
-              </p>
-            </div> */}
-
           <SoundPreviewButton
             title="Forest Rain :"
-            subtitle="lite"
+            subtitle="lite drizzle"
             audioSrc="TR-Rain-lite.mst13.mp3" // Path to your file in the public folder
             isActive={activeTrack === "forest"}
             onToggle={() => handleToggle("forest")}

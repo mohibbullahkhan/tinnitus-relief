@@ -35,18 +35,17 @@ export default function HeroSection() {
             <p
               style={{
                 fontFamily: "'Kallisto', sans-serif",
-                fontWeight: 900,
                 fontSize: "44px",
-                letterSpacing: "0.06em",
+                letterSpacing: "0.08em",
                 lineHeight: 1.05,
                 margin: 0,
                 padding: 0,
               }}
             >
-              <span style={{ color: "#9DFF00", fontWeight: 900 }}>
+              <span style={{ color: "#c8d820", fontWeight: 900 }}>
                 750 Million people{" "}
               </span>
-              <span style={{ color: "#9DFF00", fontWeight: 700 }}>
+              <span style={{ color: "#a0b828", fontWeight: 700 }}>
                 suffer from
               </span>
             </p>
@@ -57,11 +56,11 @@ export default function HeroSection() {
                 fontFamily: "'Kallisto', sans-serif",
                 fontWeight: 900,
                 fontSize: "44px",
-                letterSpacing: "0.06em",
+                letterSpacing: "0.08em",
                 lineHeight: 1.05,
                 margin: 0,
                 padding: 0,
-                color: "#9DFF00",
+                color: "#a0b828",
               }}
             >
               ringing in the ears.
@@ -93,14 +92,14 @@ export default function HeroSection() {
                 fontSize: "14px",
                 lineHeight: 1.6,
                 margin: 0,
-                color: "#9aaa88",
+                color: "#a8c030",
               }}
             >
               <strong
                 style={{
                   fontFamily: "'Kallisto', sans-serif",
                   fontWeight: 700,
-                  color: "#b8c8a0",
+                  color: "#a8c030",
                   fontSize: "16px",
                   letterSpacing: "0.04em",
                   marginRight: "2px",
@@ -116,8 +115,8 @@ export default function HeroSection() {
               style={{
                 fontFamily: "'Seravek', sans-serif",
                 fontSize: "15px",
-                fontWeight: 700,
-                color: "#b8c8a0",
+                fontWeight: 400,
+                color: "#a8c030",
                 margin: "1px 0 0 0",
                 lineHeight: 1.65,
               }}

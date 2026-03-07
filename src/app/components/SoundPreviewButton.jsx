@@ -111,7 +111,7 @@ export default function SoundPreviewButton({
       onClick={onToggle}
       className={`
         flex items-center gap-4 cursor-pointer transition-all duration-500
-        rounded-[10px] px-4 py-3 group select-none
+        rounded-[2px] px-4 py-3 group select-none
         /* Reduced overall width constraint */
         max-w-[340px] w-full 
       `}

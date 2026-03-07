@@ -42,10 +42,10 @@ const TryItSection = () => {
             </p>
 
             {/* Arrow */}
-            <div className="relative flex items-center w-[120px] h-[2px] bg-[yellowgreen]">
+            <div className="relative flex items-center w-[120px]  h-[3px] bg-[yellowgreen]">
               <div className="absolute left-0 top-0 h-full w-full bg-[#d8d80a]" />
               <div className="absolute right-[-2px] top-1/2 -translate-y-1/2">
-                <svg width="12" height="12" viewBox="0 0 10 10" fill="none">
+                <svg width="14" height="14" viewBox="0 0 10 10" fill="none">
                   <polygon points="0,0 10,5 0,10" fill="#6abf4b" />
                 </svg>
               </div>

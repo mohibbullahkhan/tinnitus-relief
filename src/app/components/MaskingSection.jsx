@@ -123,14 +123,14 @@ const MaskingSection = () => {
           {/* ── tinnitus relief app ── */}
           <p className="m-0 mb-0.5 leading-none">
             <span
-              className="text-[#9DFF00] tracking-[0.02em] text-[44px]"
-              style={{ fontFamily: "var(--font-kallisto)", fontWeight: 900 }}
+              className="text-[#9DFF00] tracking-[0.05em] text-[44px]"
+              style={{ fontFamily: "var(--font-kallisto)", fontWeight: 900, textShadow: "0 1px 2px rgba(0,0,0,0.5)" }}
             >
               tinnitus relief
             </span>{" "}
             <span
-              className="text-[#9DFF00] tracking-[0.02em] text-[44px]"
-              style={{ fontFamily: "var(--font-kallisto)", fontWeight: 700 }}
+              className="text-[#9DFF00] tracking-[0.05em] text-[44px]"
+              style={{ fontFamily: "var(--font-kallisto)", fontWeight: 700, textShadow: "0 1px 2px rgba(0,0,0,0.5)" }}
             >
               app
             </span>
@@ -188,7 +188,6 @@ const MaskingSection = () => {
             {[
               "No joke, this has literally changed my life.",
               "Without the constant nag of that high squeal\nin my head, my BP has gone down!!",
-              "I'm now in a constant state of deep relaxation\nand I've never felt better.",
             ].map((quote, i) => (
               <div key={i}>
                 <div className="flex gap-0.5 mb-1">
