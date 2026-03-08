@@ -21,6 +21,7 @@ const TryItSection = () => {
             LEFT COLUMN — "TRY IT" heading + Device mockups
         ════════════════════════════════════════════════ */}
         <div
+          className="hero-text-col"
           style={{
             flex: "1 1 0",
             minWidth: 0,
@@ -34,7 +35,7 @@ const TryItSection = () => {
           {/* ── "TRY IT FOR 7 days:: FREE" + arrow ── */}
           <div className="flex items-center gap-4 mb-6">
             <p
-              className="text-[24px] leading-none m-0 tracking-[0.06em] uppercase"
+              className="text-[24px] leading-none m-0 tracking-[0.06em] uppercase mobile-headline-tryit"
               style={{ fontFamily: "var(--font-kallisto)", fontWeight: 900 }}
             >
               <span className="text-[#d8d80a]">TRY IT FOR 7 days:: </span>
@@ -112,12 +113,12 @@ const TryItSection = () => {
                 </div>
                 <div className="absolute bottom-[4px] left-1/2 -translate-x-1/2 w-[34px] h-[2px] bg-[rgba(255,255,255,0.2)] rounded-full" />
               </div> */}
-            <div>
-              <Image src="/ipad.svg" alt="Tablet Mockup" width={180} height={240} />
+            <div className="mobile-device-ipad">
+              <Image src="/ipad.svg" alt="Tablet Mockup" width={180} height={240} className="w-full h-auto" />
             </div>
 
-            <div>
-              <Image src="/iPhone.svg" alt="Tablet Mockup" width={150} height={210} />
+            <div className="mobile-device-iphone">
+              <Image src="/iPhone.svg" alt="Tablet Mockup" width={150} height={210} className="w-full h-auto" />
             </div>
             {/* <div
                 className="relative bg-[#0a0a0a] rounded-[6px] border border-[rgba(255,255,255,0.12)] overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.7)]"
@@ -253,7 +254,7 @@ const TryItSection = () => {
   />
 </div> */}
           <div
-            className="inline-block w-[180px]  overflow-visible"
+            className="inline-block w-[180px] overflow-visible mobile-store-button"
             style={{
               border: "1.5px solid #c7c84a",
               padding: "12px", // Space for the glow to breathe
@@ -310,7 +311,7 @@ const TryItSection = () => {
             </div> */}
 
           <div
-            className="inline-block w-[180px]  overflow-visible"
+            className="inline-block w-[180px] overflow-visible mobile-store-button"
             style={{
               border: "1.5px solid #c7c84a",
               padding: "12px", // Space for the glow to breathe
@@ -351,13 +352,33 @@ const TryItSection = () => {
             .hero-row {
               display: flex !important;
               flex-direction: column !important;
+              padding: 0 20px !important;
+            }
+            .hero-text-col {
+              margin-left: 0 !important;
+              margin-top: 0 !important;
+              width: 100% !important;
+            }
+            .mobile-headline-tryit {
+              font-size: 18px !important;
+            }
+            .mobile-device-ipad {
+              width: 120px !important;
+            }
+            .mobile-device-iphone {
+              width: 90px !important;
+            }
+            .mobile-store-button {
+              width: 100% !important;
+              max-width: 250px !important;
+              display: block !important;
             }
             .hero-video-col {
               flex: unset !important;
               width: 100% !important;
               margin-top: 20px !important;
-              padding-left: 20px !important;
-              padding-right: 20px !important;
+              padding-left: 0px !important;
+              padding-right: 0px !important;
             }
           }
         `}</style>

@@ -13,7 +13,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-8 border-t border-white/5 pt-8">
 
           {/* ── Logo + tagline ── */}
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 items-center md:items-start text-center md:text-left">
             <h2 className="text-[24px] text-white/90 lowercase leading-none m-0">
               <span
                 className="font-black tracking-[0.08em] text-white/90"
@@ -38,7 +38,7 @@ export default function Footer() {
 
           {/* ── Nav links ── */}
           <div
-            className="flex gap-8 text-[11px] font-medium text-white/40 uppercase tracking-widest"
+            className="flex flex-col md:flex-row items-center gap-4 md:gap-8 text-[11px] font-medium text-white/40 uppercase tracking-widest text-center"
             style={{ fontFamily: "'Seravek', sans-serif" }}
           >
             <Link
@@ -63,7 +63,7 @@ export default function Footer() {
 
           {/* ── Copyright ── */}
           <p
-            className="text-[10px] text-white/20 font-light m-0"
+            className="text-[10px] text-white/20 font-light m-0 text-center"
             style={{ fontFamily: "'Seravek', sans-serif" }}
           >
             © {currentYear} earvana labs. all rights reserved.

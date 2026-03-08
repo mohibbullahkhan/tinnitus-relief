@@ -23,6 +23,7 @@ const MaskingSection = () => {
             LEFT COLUMN — Text
         ════════════════════════════════════════════════ */}
         <div
+          className="hero-text-col"
           style={{
             flex: "1 1 0",
             minWidth: 0,
@@ -123,14 +124,14 @@ const MaskingSection = () => {
           {/* ── tinnitus relief app ── */}
           <p className="m-0 mb-0.5 leading-none">
             <span
-              className="text-[#9DFF00] tracking-[0.05em] text-[44px]"
-              style={{ fontFamily: "var(--font-kallisto)", fontWeight: 900, textShadow: "0 1px 2px rgba(0,0,0,0.5)" }}
+              className="text-[#9DFF00] tracking-[0.05em] mobile-headline-masking"
+              style={{ fontFamily: "var(--font-kallisto)", fontWeight: 900, textShadow: "0 1px 2px rgba(0,0,0,0.5)", fontSize: "44px" }}
             >
               tinnitus relief
             </span>{" "}
             <span
-              className="text-[#9DFF00] tracking-[0.05em] text-[44px]"
-              style={{ fontFamily: "var(--font-kallisto)", fontWeight: 700, textShadow: "0 1px 2px rgba(0,0,0,0.5)" }}
+              className="text-[#9DFF00] tracking-[0.05em] mobile-headline-masking"
+              style={{ fontFamily: "var(--font-kallisto)", fontWeight: 700, textShadow: "0 1px 2px rgba(0,0,0,0.5)", fontSize: "44px" }}
             >
               app
             </span>
@@ -229,13 +230,22 @@ const MaskingSection = () => {
             .hero-row {
               display: flex !important;
               flex-direction: column !important;
+              padding: 0 20px !important;
+            }
+            .hero-text-col {
+              margin-left: 0 !important;
+              margin-top: 0 !important;
+              width: 100% !important;
+            }
+            .mobile-headline-masking {
+              font-size: 32px !important;
             }
             .hero-video-col {
               flex: unset !important;
               width: 100% !important;
               margin-top: 20px !important;
-              padding-left: 20px !important;
-              padding-right: 20px !important;
+              padding-left: 0px !important;
+              padding-right: 0px !important;
             }
           }
         `}</style>

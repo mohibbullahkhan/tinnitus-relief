@@ -28,6 +28,7 @@ const ListenSection = () => {
             LEFT COLUMN — Text + Slider
         ════════════════════════════════════════════════ */}
         <div
+          className="hero-text-col"
           style={{
             flex: "1 1 0",
             minWidth: 0,
@@ -41,7 +42,7 @@ const ListenSection = () => {
           {/* ── "take a listen:" + arrow slider ── */}
           <div className="flex items-center gap-3 mb-1">
             <p
-              className="text-[36px] leading-none text-black m-0 tracking-[0.01em]"
+              className="text-[36px] leading-none text-white m-0 tracking-[0.01em] mobile-headline-listen"
               style={{ fontFamily: "var(--font-kallisto)", fontWeight: 700 }}
             >
               take a listen:
@@ -150,13 +151,22 @@ const ListenSection = () => {
             .hero-row {
               display: flex !important;
               flex-direction: column !important;
+              padding: 0 20px !important;
+            }
+            .hero-text-col {
+              margin-left: 0 !important;
+              margin-top: 0 !important;
+              width: 100% !important;
+            }
+            .mobile-headline-listen {
+              font-size: 26px !important;
             }
             .hero-video-col {
               flex: unset !important;
               width: 100% !important;
               margin-top: 20px !important;
-              padding-left: 20px !important;
-              padding-right: 20px !important;
+              padding-left: 0px !important;
+              padding-right: 0px !important;
             }
           }
         `}</style>

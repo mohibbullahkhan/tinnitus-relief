@@ -19,6 +19,7 @@ export default function HeroSection() {
             LEFT COLUMN — Text
         ════════════════════════════════════════════════ */}
         <div
+          className="hero-text-col"
           style={{
             flex: "1 1 0",
             minWidth: 0,
@@ -33,6 +34,7 @@ export default function HeroSection() {
           <div style={{ marginBottom: "8px" }}>
             {/* Line 1 */}
             <p
+              className="mobile-headline"
               style={{
                 fontFamily: "'Kallisto', sans-serif",
                 fontSize: "44px",
@@ -52,6 +54,7 @@ export default function HeroSection() {
 
             {/* Line 2 */}
             <p
+              className="mobile-headline"
               style={{
                 fontFamily: "'Kallisto', sans-serif",
                 fontWeight: 900,
@@ -328,6 +331,15 @@ export default function HeroSection() {
         @media (max-width: 767px) {
           .hero-row {
             flex-direction: column !important;
+            padding: 0 20px !important;
+          }
+          .hero-text-col {
+            margin-left: 0 !important;
+            margin-top: 0 !important;
+            width: 100% !important;
+          }
+          .mobile-headline {
+            font-size: 26px !important;
           }
           .hero-video-col {
             flex: unset !important;
