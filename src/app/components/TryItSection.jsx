@@ -56,127 +56,18 @@ const TryItSection = () => {
           {/* ── Device Mockups row ── */}
           <div className="flex items-end gap-5">
             {/* Tablet — larger, left */}
-            {/* <div
-                className="relative bg-[#0a0a0a] rounded-[6px] border border-[rgba(255,255,255,0.12)] overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.7)]"
-                style={{ width: "150px", height: "210px" }}
-              >
-                <div className="absolute inset-[3px] rounded-[4px] bg-[#111a0e] overflow-hidden">
-                
-                  <div className="w-full px-2 pt-1.5 pb-1">
-                    <p
-                      className="text-[7px] text-[#9DFF00] leading-none m-0 tracking-[0.04em]"
-                      style={{
-                        fontFamily: "var(--font-kallisto)",
-                        fontWeight: 700,
-                      }}
-                    >
-                      tinnitus<span className="text-white">relief</span>
-                    </p>
-                  </div>
-      
-                  <div className="w-full h-[70px] bg-gradient-to-b from-[#1a3a10] to-[#0d1f08] flex items-center justify-center">
-                    <svg
-                      width="40"
-                      height="40"
-                      viewBox="0 0 36 36"
-                      fill="none"
-                      className="opacity-70"
-                    >
-                      <ellipse
-                        cx="18"
-                        cy="20"
-                        rx="10"
-                        ry="14"
-                        fill="#2a6a18"
-                        transform="rotate(-20 18 20)"
-                      />
-                      <path
-                        d="M18 34 Q10 20 18 8"
-                        stroke="#4a9a28"
-                        strokeWidth="1"
-                        fill="none"
-                      />
-                    </svg>
-                  </div>
-               
-                  <div className="px-2 pt-2 flex flex-col gap-[5px]">
-                    {[...Array(9)].map((_, i) => (
-                      <div key={i} className="flex items-center gap-1.5">
-                        <div className="w-1.5 h-1.5 rounded-full bg-[#4a7a30] shrink-0" />
-                        <div
-                          className="h-[3px] rounded-full bg-[#2a4a20]"
-                          style={{ width: `${52 + (i % 4) * 12}px` }}
-                        />
-                      </div>
-                    ))}
-                  </div>
-                </div>
-                <div className="absolute bottom-[4px] left-1/2 -translate-x-1/2 w-[34px] h-[2px] bg-[rgba(255,255,255,0.2)] rounded-full" />
-              </div> */}
+         
             <div className="mobile-device-ipad">
-              <Image src="/ipad.svg" alt="Tablet Mockup" width={180} height={240} className="w-full h-auto" />
+              <Image 
+  src="/product.png" 
+  alt="Tablet Mockup" 
+  width={420} 
+  height={520} 
+  className="w-[420px] h-auto"
+/>
             </div>
 
-            <div className="mobile-device-iphone">
-              <Image src="/iPhone.svg" alt="Tablet Mockup" width={150} height={210} className="w-full h-auto" />
-            </div>
-            {/* <div
-                className="relative bg-[#0a0a0a] rounded-[6px] border border-[rgba(255,255,255,0.12)] overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.7)]"
-                style={{ width: "100px", height: "168px" }}
-              >
-                <div className="absolute inset-[3px] rounded-[4px] bg-[#111a0e] overflow-hidden">
-             
-                  <div className="w-full px-1.5 pt-1.5 pb-0.5">
-                    <p
-                      className="text-[6px] text-[#9DFF00] leading-none m-0 tracking-[0.04em]"
-                      style={{
-                        fontFamily: "var(--font-kallisto)",
-                        fontWeight: 700,
-                      }}
-                    >
-                      tinnitus<span className="text-white">relief</span>
-                    </p>
-                  </div>
-                 
-                  <div className="w-full h-[50px] bg-gradient-to-b from-[#1a3a10] to-[#0d1f08] flex items-center justify-center">
-                    <svg
-                      width="30"
-                      height="30"
-                      viewBox="0 0 36 36"
-                      fill="none"
-                      className="opacity-70"
-                    >
-                      <ellipse
-                        cx="18"
-                        cy="20"
-                        rx="10"
-                        ry="14"
-                        fill="#2a6a18"
-                        transform="rotate(-20 18 20)"
-                      />
-                      <path
-                        d="M18 34 Q10 20 18 8"
-                        stroke="#4a9a28"
-                        strokeWidth="1"
-                        fill="none"
-                      />
-                    </svg>
-                  </div>
-             
-                  <div className="px-1.5 pt-1.5 flex flex-col gap-[4px]">
-                    {[...Array(8)].map((_, i) => (
-                      <div key={i} className="flex items-center gap-1">
-                        <div className="w-1 h-1 rounded-full bg-[#4a7a30] shrink-0" />
-                        <div
-                          className="h-[2.5px] rounded-full bg-[#2a4a20]"
-                          style={{ width: `${36 + (i % 3) * 8}px` }}
-                        />
-                      </div>
-                    ))}
-                  </div>
-                </div>
-                <div className="absolute bottom-[3px] left-1/2 -translate-x-1/2 w-[26px] h-[2px] bg-[rgba(255,255,255,0.2)] rounded-full" />
-              </div> */}
+          
           </div>
           {/* ── END Device Mockups ── */}
         </div>
