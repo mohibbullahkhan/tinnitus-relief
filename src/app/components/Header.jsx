@@ -8,11 +8,11 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const menuItems = [
-    { label: 'Audio Previews', href: '#audio-previews' },
-    { label: 'Suggestions for best use', href: '#best-use' },
-    { label: 'FAQ', href: '#faq' },
-    { label: 'Privacy Policy', href: '/privacy' },
-    { label: 'Terms of Service', href: '/terms' },
+    { label: 'Audio Previews', href: '/' },
+    { label: 'Suggestions for best use', href: '/' },
+    { label: 'FAQ', href: '/faq' },
+    { label: 'Privacy Policy', href: '/privacy-policy' },
+    { label: 'Terms of Service', href: '/terms-of-service' },
   ]
 
   return (
@@ -20,7 +20,10 @@ export default function Header() {
 
       {/* DESKTOP — Full Banner Image */}
       <div className="hidden md:block w-full relative">
+        <Link href="/">
+        
         <Image
+      
           src="/Header.png"
           alt="Tinnitus Relief by Earvana"
           width={1560}
@@ -32,6 +35,8 @@ export default function Header() {
             display: 'block'
           }}
         />
+        </Link>
+        
 
         {/* Desktop Menu Icon */}
         <button

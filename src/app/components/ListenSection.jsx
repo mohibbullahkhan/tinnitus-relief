@@ -64,15 +64,15 @@ const ListenSection = () => {
           {/* ── best in headphones ── */}
           <p
             className="text-[15px] leading-none text-[#7abf50] m-0 mb-3 tracking-[0.01em]"
-            style={{ fontFamily: "var(--font-seravek)", fontWeight: 400 }}
+            style={{ fontFamily: "var(--font-kallisto)", fontWeight: 400 }}
           >
             ( best in headphones or ear buds )
           </p>
 
           {/* ── "as you turn up the volume..." ── */}
           <p
-            className="text-[16px] font-bold leading-[1.6] text-[#c8d0b8] m-0 mb-1"
-            style={{ fontFamily: "var(--font-seravek)", fontWeight: 400 }}
+            className="text-[16px] font-bold leading-[1.6] text-[#c8d820] m-0 mb-1"
+            style={{ fontFamily: "var(--font-kallisto)", fontWeight: 400 }}
           >
             as you turn up the volume, you will likely notice:
           </p>
@@ -86,8 +86,8 @@ const ListenSection = () => {
             ].map((item, i) => (
               <li
                 key={i}
-                className="flex items-start gap-1.5 text-[14px] leading-[1.6] text-[#a8b898]"
-                style={{ fontFamily: "var(--font-seravek)" }}
+                className="flex items-start gap-1.5 text-[14px] leading-[1.6] text-[#c8d820]"
+                style={{ fontFamily: "var(--font-kallisto)" }}
               >
                 <span className="mt-[3px] shrink-0 text-[#a8b898]">•</span>
                 <span>{item}</span>

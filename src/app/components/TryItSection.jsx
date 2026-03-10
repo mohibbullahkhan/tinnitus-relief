@@ -38,8 +38,8 @@ const TryItSection = () => {
               className="text-[24px] leading-none m-0 tracking-[0.06em] uppercase mobile-headline-tryit"
               style={{ fontFamily: "var(--font-kallisto)", fontWeight: 900 }}
             >
-              <span className="text-[#d8d80a]">TRY IT FOR 7 days:: </span>
-              <span className="text-[#d8d80a]">FREE</span>
+              <span className="text-[#c8d820]">TRY IT FOR 7 days:: </span>
+              <span className="text-[#c8d820]">FREE</span>
             </p>
 
             {/* Arrow */}

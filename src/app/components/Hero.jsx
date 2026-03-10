@@ -73,7 +73,7 @@ export default function HeroSection() {
           {/* ── "Are you one of them?" ── */}
           <p
             style={{
-              fontFamily: "'Seravek', sans-serif",
+              fontFamily: "'kallisto', sans-serif",
               fontSize: "18px",
               fontWeight: 400,
               color: "#c8d0b8",
@@ -95,14 +95,14 @@ export default function HeroSection() {
                 fontSize: "14px",
                 lineHeight: 1.6,
                 margin: 0,
-                color: "#a8c030",
+                color: "white",
               }}
             >
               <strong
                 style={{
                   fontFamily: "'Kallisto', sans-serif",
                   fontWeight: 700,
-                  color: "#a8c030",
+                  color: "white",
                   fontSize: "16px",
                   letterSpacing: "0.04em",
                   marginRight: "2px",
@@ -110,16 +110,17 @@ export default function HeroSection() {
               >
                 TINNITUS
               </strong>{" "}
-              -- to date -- is not curable.
+              <span style={{ fontFamily: "var(--font-kallisto)"}}>-- to date -- is not curable.</span>
+              
             </p>
 
             {/* Row 2+3 */}
             <p
               style={{
-                fontFamily: "'Seravek', sans-serif",
+                fontFamily: "var(--font-kallisto)",
                 fontSize: "15px",
-                fontWeight: 400,
-                color: "#a8c030",
+                fontWeight: 600,
+                color: "black",
                 margin: "1px 0 0 0",
                 lineHeight: 1.65,
               }}
@@ -135,10 +136,10 @@ export default function HeroSection() {
           <div>
             <p
               style={{
-                fontFamily: "'Seravek', sans-serif",
+                fontFamily: "var(--font-kallisto)",
                 fontSize: "16px",
                 fontWeight: 400,
-                color: "#c8d0b8",
+                color: "white",
                 margin: 0,
                 lineHeight: 1.6,
               }}
@@ -148,10 +149,10 @@ export default function HeroSection() {
 
             <p
               style={{
-                fontFamily: "'Seravek', sans-serif",
+                fontFamily: "var(--font-kallisto)",
                 fontSize: "16px",
                 fontWeight: 400,
-                color: "#c8d0b8",
+                color: "white",
                 margin: 0,
                 lineHeight: 1.5,
                 display: "flex",
@@ -172,7 +173,7 @@ export default function HeroSection() {
               >
                 masking,
               </span>
-              <span style={{ fontSize: "16px", color: "#c8d0b8" }}>
+              <span style={{ fontSize: "16px", color: "white" }}>
                 a technique used for years.
               </span>
             </p>
