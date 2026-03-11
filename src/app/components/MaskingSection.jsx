@@ -68,10 +68,10 @@ const MaskingSection = () => {
 
           {/* ── White noise sub ── */}
           <p
-            className="text-[13px] leading-[1.6] text-[black] m-0 mb-1"
+            className="text-[13px] leading-[1.6] text-[#1A1E1A] m-0 mb-1"
             style={{ fontFamily: "var(--font-kallisto)" }}
           >
-            <span className="font-extrabold  text-black"  style={{ fontFamily: "var(--font-kallisto)", fontWeight: 700 }}>White noise</span> is the
+            <span className="font-extrabold  text-[black]"  style={{ fontFamily: "var(--font-kallisto)", fontWeight: 700 }}>White noise</span> is the
             presence of ALL audio frequencies
             <br />
             blasting at you simultaneously.
@@ -79,7 +79,7 @@ const MaskingSection = () => {
 
           {/* ── Body paragraph ── */}
           <p
-            className="text-[13px] leading-[1.65] text-[black] m-0 mb-4"
+            className="text-[13px] leading-[1.65] text-[#1A1E1A] m-0 mb-4"
             style={{ fontFamily: "var(--font-kallisto)" }}
           >
             While it can be effective in drowning out your internal ringing,
@@ -99,12 +99,12 @@ const MaskingSection = () => {
             style={{ fontFamily: "var(--font-kallisto)" }}
           >
             <span
-              className="text-[#9DFF00] text-[17px]"
+              className="text-[#3C7B00] text-[17px]"
               style={{ fontFamily: "var(--font-kallisto)", fontWeight: 700 }}
             >
               The NEW way:{" "}
             </span>
-            <span className="text-[#9DFF00]">
+            <span className="text-[#3C7B00]">
               Replace the annoying ringing with
               <br />
               a specialized nature soundtrack - digitally designed to
@@ -115,7 +115,7 @@ const MaskingSection = () => {
 
           {/* ── the innovative new ── */}
           <p
-            className="text-[16px] leading-none text-[#9DFF00] m-0 mb-0.5"
+            className="text-[16px] leading-none text-[#003D00] m-0 mb-0.5"
             style={{ fontFamily: "var(--font-kallisto)", fontWeight: 300 }}
           >
             the innovative new
@@ -124,13 +124,13 @@ const MaskingSection = () => {
           {/* ── tinnitus relief app ── */}
           <p className="m-0 mb-0.5 leading-none">
             <span
-              className="text-[#9DFF00] tracking-[0.05em] mobile-headline-masking"
+              className="text-[#003D00] tracking-[0.05em] mobile-headline-masking"
               style={{ fontFamily: "var(--font-kallisto)", fontWeight: 900,  fontSize: "44px" }}
             >
-              tinnitus <span className="text-[#1746b6]">relief</span>
+              tinnitus <span className="text-[#0059C8]">relief</span>
             </span>{" "}
             <span
-              className="text-[#9DFF00] tracking-[0.05em] mobile-headline-masking"
+              className="text-[#003D00] tracking-[0.05em] mobile-headline-masking"
               style={{ fontFamily: "var(--font-kallisto)", fontWeight: 700, textShadow: "0 1px 2px rgba(0,0,0,0.5)", fontSize: "44px" }}
             >
               app
@@ -139,12 +139,12 @@ const MaskingSection = () => {
 
           {/* ── by earvana ── */}
           <p
-            className="text-[16px] leading-none text-[#9DFF00] m-0"
+            className="text-[16px] leading-none text-[#003D00] m-0"
             style={{ fontFamily: "var(--font-kallisto)", fontWeight: 300 }}
           >
             by{" "}
             <span
-              className="text-[#9DFF00] text-[18px]"
+              className="text-[#003D00] text-[18px]"
               style={{ fontFamily: "var(--font-kallisto)", fontWeight: 700 }}
             >
               earvana.

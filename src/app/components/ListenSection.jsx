@@ -42,43 +42,64 @@ const ListenSection = () => {
           {/* ── "take a listen:" + arrow slider ── */}
           <div className="flex items-center gap-3 mb-1">
             <p
-              className="text-[36px] leading-none text-white m-0 tracking-[0.01em] mobile-headline-listen"
+              className="text-[36px] leading-none text-black m-0 tracking-[0.01em] mobile-headline-listen"
               style={{ fontFamily: "var(--font-kallisto)", fontWeight: 700 }}
             >
               take a listen:
             </p>
 
             {/* Arrow slider track */}
-            <div className="relative flex items-center w-[200px] h-[3px] bg-[#4a6a3a]">
-              {/* filled green portion */}
+            {/* <div className="relative flex items-center w-[200px] h-[3px] bg-[#4a6a3a]">
+            
               <div className="absolute left-0 top-0 h-full w-[70%] bg-[#6abf4b]" />
-              {/* arrow head at end */}
+           
               <div className="absolute right-0 top-1/2 -translate-y-1/2">
                 <svg width="14" height="14" viewBox="0 0 10 10" fill="none">
                   <polygon points="0,0 10,5 0,10" fill="#6abf4b" />
                 </svg>
               </div>
-            </div>
+            </div> */}
+            <div className="relative flex items-center w-[300px] h-[4px] bg-[#10FF9F] border-[1.5px] border-black">
+  {/* The Arrowhead - Pulled back to connect flush */}
+  <div className="absolute right-[-1.5px] top-1/2 -translate-y-1/2">
+    <svg 
+      width="36" 
+      height="18" 
+      viewBox="0 0 36 18" 
+      fill="none" 
+      xmlns="http://www.w3.org/2000/svg"
+      className="block"
+    >
+      <path 
+        d="M1 2L32 9L1 16V2Z" 
+        fill="#10FF9F" 
+        stroke="black" 
+        strokeWidth="2" 
+        strokeLinejoin="round"
+      />
+    </svg>
+  </div>
+</div>
           </div>
 
           {/* ── best in headphones ── */}
           <p
-            className="text-[15px] leading-none text-[#7abf50] m-0 mb-3 tracking-[0.01em]"
-            style={{ fontFamily: "var(--font-kallisto)", fontWeight: 400 }}
+            className="text-[15px] text-black leading-none text-[#7abf50] m-0 mb-3 tracking-[0.01em]"
+            style={{ fontFamily: "var(--font-kallisto)", fontWeight: 200 }}
           >
             ( best in headphones or ear buds )
           </p>
 
           {/* ── "as you turn up the volume..." ── */}
           <p
-            className="text-[16px] font-bold leading-[1.6] text-[#c8d820] m-0 mb-1"
+            className="text-[16px] font-bold leading-[1.6] text-[#147D0B] m-0 mb-1"
             style={{ fontFamily: "var(--font-kallisto)", fontWeight: 400 }}
           >
             as you turn up the volume, you will likely notice:
           </p>
 
           {/* ── Bullet list ── */}
-          <ul className="list-none m-0 p-0 flex flex-col gap-0.5">
+          {/* <ul className="list-none m-0 p-0 flex flex-col gap-0.5 text-[#1A860F]">
             {[
               "the ringing disappears",
               "uncanny realism: full immersion to the environment",
@@ -86,14 +107,44 @@ const ListenSection = () => {
             ].map((item, i) => (
               <li
                 key={i}
-                className="flex items-start gap-1.5 text-[14px] leading-[1.6] text-[#c8d820]"
+                className="flex items-start gap-1.5 text-[14px] leading-[1.6] text-[#1A860F]"
                 style={{ fontFamily: "var(--font-kallisto)" }}
               >
-                <span className="mt-[3px] shrink-0 text-[#a8b898]">•</span>
+                <span className="mt-[3px] shrink-0 text-[#1A860F]">•</span>
                 <span>{item}</span>
               </li>
             ))}
-          </ul>
+          </ul> */}
+
+          <ul className="list-none m-0 p-0 flex flex-col gap-0.5 text-[#1A860F]">
+  {[
+    "the ringing disappears",
+    "uncanny realism: full immersion to the environment",
+    "deep relaxation",
+  ].map((item, i) => (
+    <li
+      key={i}
+      className="flex items-start gap-1.5 text-[14px] leading-[1.6] text-[#1A860F]"
+      style={{ fontFamily: "var(--font-kallisto)" }}
+    >
+      <span className="mt-[3px] shrink-0 text-[#1A860F]">•</span>
+      <span>
+        {item.split(" ").map((word, index) => (
+          <span key={index}>
+            {word === "disappears" ? (
+              <span className="underline decoration-1 underline-offset-4">
+                {word}
+              </span>
+            ) : (
+              word
+            )}
+            {index !== item.split(" ").length - 1 && " "}
+          </span>
+        ))}
+      </span>
+    </li>
+  ))}
+</ul>
         </div>
         {/* ── END LEFT COLUMN ── */}
 

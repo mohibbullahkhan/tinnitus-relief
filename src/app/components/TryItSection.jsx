@@ -38,19 +38,44 @@ const TryItSection = () => {
               className="text-[24px] leading-none m-0 tracking-[0.06em] uppercase mobile-headline-tryit"
               style={{ fontFamily: "var(--font-kallisto)", fontWeight: 900 }}
             >
-              <span className="text-[#c8d820]">TRY IT FOR 7 days:: </span>
-              <span className="text-[#c8d820]">FREE</span>
+              <span className="text-[#009900]">TRY IT FOR 7 days:: </span>
+              <span className="text-[#009900]">FREE</span>
             </p>
 
             {/* Arrow */}
-            <div className="relative flex items-center w-[120px]  h-[3px] bg-[yellowgreen]">
+            {/* <div className="relative flex items-center w-[120px]  h-[3px] bg-[yellowgreen]">
               <div className="absolute left-0 top-0 h-full w-full bg-[#d8d80a]" />
               <div className="absolute right-[-2px] top-1/2 -translate-y-1/2">
                 <svg width="14" height="14" viewBox="0 0 10 10" fill="none">
                   <polygon points="0,0 10,5 0,10" fill="#6abf4b" />
                 </svg>
               </div>
-            </div>
+            </div> */}
+            <div className="relative flex items-center w-[120px] h-[4px] bg-[#d8d80a] border border-black rounded-sm">
+  {/* Left Stem End Cap */}
+  <div className="absolute left-[-1px] top-[-1px] h-[4px] w-[1px] bg-black" />
+
+  {/* Bordered Arrowhead SVG */}
+  <div className="absolute right-[-1px] top-1/2 -translate-y-1/2 translate-x-1/2">
+    <svg 
+      width="20" 
+      height="20" 
+      viewBox="0 0 20 20" 
+      fill="none" 
+      xmlns="http://www.w3.org/2000/svg"
+      className="drop-shadow-[0_1px_1px_rgba(0,0,0,0.1)]" // Optional: premium depth
+    >
+      <path 
+        d="M2 2L18 10L2 18V2Z" 
+        fill="#FFD700" // Premium Gold/Yellow
+        stroke="black" 
+        strokeWidth="1.5" 
+        strokeLinecap="round" 
+        strokeLinejoin="round"
+      />
+    </svg>
+  </div>
+</div>
           </div>
 
           {/* ── Device Mockups row ── */}

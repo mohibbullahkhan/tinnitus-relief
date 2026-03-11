@@ -44,10 +44,10 @@ export default function HeroSection() {
                 padding: 0,
               }}
             >
-              <span style={{ color: "#c8d820", fontWeight: 900 }}>
+              <span style={{ color: "#93FF22", fontWeight: 900 }}>
                 750 Million people{" "}
               </span>
-              <span style={{ color: "#a0b828", fontWeight: 700 }}>
+              <span style={{ color: "#93FF22", fontWeight: 400 }}>
                 suffer from
               </span>
             </p>
@@ -63,7 +63,7 @@ export default function HeroSection() {
                 lineHeight: 1.05,
                 margin: 0,
                 padding: 0,
-                color: "#a0b828",
+                color: "#93FF22",
               }}
             >
               ringing in the ears.
