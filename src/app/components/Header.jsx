@@ -21,22 +21,22 @@ export default function Header() {
       {/* DESKTOP — Full Banner Image */}
       <div className="hidden md:block w-full relative">
         <Link href="/">
-        
-        <Image
-      
-          src="/Header.png"
-          alt="Tinnitus Relief by Earvana"
-          width={1560}
-          height={280}
-          priority
-          style={{
-            width: '100%',
-            height: 'auto',
-            display: 'block'
-          }}
-        />
+
+          <Image
+
+            src="/Header.png"
+            alt="Tinnitus Relief by Earvana"
+            width={1560}
+            height={280}
+            priority
+            style={{
+              width: '100%',
+              height: 'auto',
+              display: 'block'
+            }}
+          />
         </Link>
-        
+
 
         {/* Desktop Menu Icon */}
         <button
@@ -44,8 +44,8 @@ export default function Header() {
           className="absolute top-1/2 -translate-y-1/2 right-12 -mt-[52px] mr-[732px] w-28 h-28 hover:scale-110 transition-transform focus:outline-none"
         >
           {/* <Image
-            src="/menu.png"
-            alt="Menu"
+            src={isMenuOpen ? "/menu-open.png" : "/menu.png"}
+            alt={isMenuOpen ? "Close Menu" : "Open Menu"}
             width={120}
             height={120}
             className="object-contain"
@@ -79,8 +79,8 @@ export default function Header() {
             className="cursor-pointer group flex items-center justify-center p-1"
           >
             <Image
-              src="/menu.png"
-              alt="Menu"
+              src={isMenuOpen ? "/menu-open.png" : "/menu.png"}
+              alt={isMenuOpen ? "Close Menu" : "Open Menu"}
               width={26}
               height={26}
               className="object-contain"

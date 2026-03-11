@@ -28,6 +28,7 @@ export default function HeroSection() {
             alignItems: "flex-start",
             marginLeft: "80px",
             marginTop: "-20px",
+            lineHeight: 0.85,
           }}
         >
           {/* ── HEADLINE BLOCK ── */}
@@ -39,15 +40,15 @@ export default function HeroSection() {
                 fontFamily: "'Kallisto', sans-serif",
                 fontSize: "44px",
                 letterSpacing: "0.08em",
-                lineHeight: 1.05,
                 margin: 0,
                 padding: 0,
+                textShadow: "none",
               }}
             >
-              <span style={{ color: "#93FF22", fontWeight: 900 }}>
+              <span style={{ color: "#93FF22", fontWeight: 900, textShadow: "none" }}>
                 750 Million people{" "}
               </span>
-              <span style={{ color: "#93FF22", fontWeight: 400 }}>
+              <span style={{ color: "#93FF22", fontWeight: 400, textShadow: "none" }}>
                 suffer from
               </span>
             </p>
@@ -60,10 +61,10 @@ export default function HeroSection() {
                 fontWeight: 900,
                 fontSize: "44px",
                 letterSpacing: "0.08em",
-                lineHeight: 1.05,
                 margin: 0,
                 padding: 0,
                 color: "#93FF22",
+                textShadow: "none",
               }}
             >
               ringing in the ears.
@@ -76,13 +77,15 @@ export default function HeroSection() {
               fontFamily: "'kallisto', sans-serif",
               fontSize: "18px",
               fontWeight: 400,
-              color: "#c8d0b8",
+              color: "#428304",
               margin: "0 0 14px 0",
-              lineHeight: 1.5,
+              textShadow: "none",
+              paddingTop: "10px",
+              paddingBottom: "10px",
             }}
           >
             Are{" "}
-            <strong style={{ fontWeight: 700, color: "#ffffff" }}>you</strong>{" "}
+            <strong style={{ fontWeight: 900, color: "#428304" }}>you</strong>{" "}
             one of them?
           </p>
 
@@ -93,9 +96,9 @@ export default function HeroSection() {
               style={{
                 fontFamily: "'Seravek', sans-serif",
                 fontSize: "14px",
-                lineHeight: 1.6,
                 margin: 0,
                 color: "white",
+                textShadow: "none",
               }}
             >
               <strong
@@ -110,8 +113,8 @@ export default function HeroSection() {
               >
                 TINNITUS
               </strong>{" "}
-              <span style={{ fontFamily: "var(--font-kallisto)"}}>-- to date -- is not curable.</span>
-              
+              <span style={{ fontFamily: "var(--font-kallisto)", textShadow: "none" }}>-- to date -- is not curable.</span>
+
             </p>
 
             {/* Row 2+3 */}
@@ -122,13 +125,16 @@ export default function HeroSection() {
                 fontWeight: 600,
                 color: "black",
                 margin: "1px 0 0 0",
-                lineHeight: 1.65,
+                textShadow: "none",
+                paddingTop: "10px",
+                paddingBottom: "10px",
+                lineHeight: "normal",
               }}
             >
               But new research shows significant success
               <br />
               in a alternative solution.{" "}
-              <span style={{ fontWeight: 600 }}>See and preview below:</span>
+              <span style={{ fontWeight: 600, textShadow: "none" }}>See and preview below:</span>
             </p>
           </div>
 
@@ -141,7 +147,7 @@ export default function HeroSection() {
                 fontWeight: 400,
                 color: "white",
                 margin: 0,
-                lineHeight: 1.6,
+                textShadow: "none",
               }}
             >
               ENT&apos;s and Audiologists recommend
@@ -154,11 +160,11 @@ export default function HeroSection() {
                 fontWeight: 400,
                 color: "white",
                 margin: 0,
-                lineHeight: 1.5,
                 display: "flex",
                 alignItems: "baseline",
                 flexWrap: "wrap",
                 gap: "5px",
+                textShadow: "none",
               }}
             >
               <span
@@ -168,12 +174,12 @@ export default function HeroSection() {
                   fontSize: "26px",
                   color: "#ffffff",
                   letterSpacing: "0.01em",
-                  lineHeight: 1,
+                  textShadow: "none",
                 }}
               >
                 masking,
               </span>
-              <span style={{ fontSize: "16px", color: "white" }}>
+              <span style={{ fontSize: "16px", color: "white", textShadow: "none" }}>
                 a technique used for years.
               </span>
             </p>

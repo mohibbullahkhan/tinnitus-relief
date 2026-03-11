@@ -60,26 +60,26 @@ const ListenSection = () => {
               </div>
             </div> */}
             <div className="relative flex items-center w-[300px] h-[4px] bg-[#10FF9F] border-[1.5px] border-black">
-  {/* The Arrowhead - Pulled back to connect flush */}
-  <div className="absolute right-[-1.5px] top-1/2 -translate-y-1/2">
-    <svg 
-      width="36" 
-      height="18" 
-      viewBox="0 0 36 18" 
-      fill="none" 
-      xmlns="http://www.w3.org/2000/svg"
-      className="block"
-    >
-      <path 
-        d="M1 2L32 9L1 16V2Z" 
-        fill="#10FF9F" 
-        stroke="black" 
-        strokeWidth="2" 
-        strokeLinejoin="round"
-      />
-    </svg>
-  </div>
-</div>
+              {/* The Arrowhead - Pulled back to connect flush */}
+              <div className="absolute right-[-1.5px] top-1/2 -translate-y-1/2">
+                <svg
+                  width="36"
+                  height="18"
+                  viewBox="0 0 36 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="block"
+                >
+                  <path
+                    d="M1 2L32 9L1 16V2Z"
+                    fill="#10FF9F"
+                    stroke="black"
+                    strokeWidth="2"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
           </div>
 
           {/* ── best in headphones ── */}
@@ -117,34 +117,34 @@ const ListenSection = () => {
           </ul> */}
 
           <ul className="list-none m-0 p-0 flex flex-col gap-0.5 text-[#1A860F]">
-  {[
-    "the ringing disappears",
-    "uncanny realism: full immersion to the environment",
-    "deep relaxation",
-  ].map((item, i) => (
-    <li
-      key={i}
-      className="flex items-start gap-1.5 text-[14px] leading-[1.6] text-[#1A860F]"
-      style={{ fontFamily: "var(--font-kallisto)" }}
-    >
-      <span className="mt-[3px] shrink-0 text-[#1A860F]">•</span>
-      <span>
-        {item.split(" ").map((word, index) => (
-          <span key={index}>
-            {word === "disappears" ? (
-              <span className="underline decoration-1 underline-offset-4">
-                {word}
-              </span>
-            ) : (
-              word
-            )}
-            {index !== item.split(" ").length - 1 && " "}
-          </span>
-        ))}
-      </span>
-    </li>
-  ))}
-</ul>
+            {[
+              "the ringing disappears",
+              "uncanny realism: full immersion to the environment",
+              "deep relaxation",
+            ].map((item, i) => (
+              <li
+                key={i}
+                className="flex items-start gap-1.5 text-[14px] leading-[1.6] text-[#1A860F]"
+                style={{ fontFamily: "var(--font-kallisto)" }}
+              >
+                <span className="mt-[3px] shrink-0 text-[#1A860F]">•</span>
+                <span>
+                  {item.split(" ").map((word, index) => (
+                    <span key={index}>
+                      {word === "disappears" ? (
+                        <span className="underline decoration-1 underline-offset-4">
+                          {word}
+                        </span>
+                      ) : (
+                        word
+                      )}
+                      {index !== item.split(" ").length - 1 && " "}
+                    </span>
+                  ))}
+                </span>
+              </li>
+            ))}
+          </ul>
         </div>
         {/* ── END LEFT COLUMN ── */}
 
